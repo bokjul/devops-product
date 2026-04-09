@@ -3,8 +3,7 @@ import type { ProductDTO, ProductInput } from "../types/product";
 import { data } from "react-router-dom";
 
 const instance = axios.create({
-  baseURL: "/api/product", //localhost:8080/api/product
-  headers: { "Content-Type": "application/json" },
+  baseURL: "http://13.125.219.180:8080/product",
 });
 
 export const productApi = {
